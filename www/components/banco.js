@@ -11,9 +11,9 @@ $(document).on('click','#cadastro', function(){
     type:"post",
     url:"https://crud2019-marcosvini001.c9users.io/cadastro.php",
     data:parametros,
-    sucess:function(data){
-      $("#nome").val(""); 
-      $("#email").val("");
+    success:function(data){
+      $("#nome").val(""), 
+      $("#email").val(""),
       navigator.notification.alert(data);
       },
       error:function(data){
